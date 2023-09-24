@@ -29,7 +29,6 @@ public class SpringMemberControllerV2 {
         memberRepository.save(member);
 
         ModelAndView mv = new ModelAndView("save-result");
-        mv.getModel().put("member", member);
         mv.addObject("member", member);
         return mv;
     }
